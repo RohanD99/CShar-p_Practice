@@ -1,7 +1,7 @@
 # CShar-p_Practice
 Access Modifiers - 
-public:
 
+public:
 Scope: Accessible from anywhere, both within and outside the defining assembly.
 Key Points:
 The most permissive access modifier.
