@@ -34,11 +34,3 @@ Key Points:
 Combines the accessibility of both protected and internal.
 Members with protected internal access modifier can be accessed from derived types, classes within the same assembly, and the same class.
 
-Specifiers     Same Assembly      Other Assembly
-              Derived   Other      Derived   Other
-Public          Yes      Yes         Yes      Yes
-Private         No        No          No      No
-Protected       Yes       No         Yes      NO
-Internal        Yes      Yes         No       No
-Protected.Int    Yes      Yes        Yes      No
-Private.Protect  Yes      No         No       No
