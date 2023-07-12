@@ -6,7 +6,7 @@ namespace Bank
     internal class Program
     {
         private static string connectionString = "Server=TL097;Database=rdd;Integrated Security=True;";
-        class App
+        public static void Main(string[] args)
         {
             Console.WriteLine("///Welcome to RD's Bank\\\\\\");
             Console.ReadLine();
