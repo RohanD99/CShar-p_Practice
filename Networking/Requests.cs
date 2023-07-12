@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Net.Http;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ public class Request
         {
             // GET request to /posts
             HttpResponseMessage getResponse = await client.GetAsync("https://jsonplaceholder.typicode.com/posts");
+            HttpWebResponse webResponse = await client.BaseAddress + getResponse.Content.ReadAsStringAsync();
 
             if (getResponse.IsSuccessStatusCode)
             {
