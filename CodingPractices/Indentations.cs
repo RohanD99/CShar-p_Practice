@@ -10,16 +10,16 @@ namespace CodingStandards
     {
         public class Example                                    //tabs are used for indentation
         {
-            private string _name;
-            private int _age;
+            private string name;
+            private int age;
 
             #region Public Methods                            //#region directive is used to group related pieces of code together.
 
             public void SayHello(string name)
             {                                                  //Curly braces are placed in the same level as the code outside the braces.
-                _name = name;
+                name = name;
 
-                Console.WriteLine("Hello, " + _name + "!");
+                Console.WriteLine("Hello, " + name + "!");
 
                 if (IsMorning())
                 {
@@ -47,8 +47,8 @@ namespace CodingStandards
 
             public int Age                                  //Public members are placed at the bottom.
             {
-                get { return _age; }
-                set { _age = value; }
+                get { return age; }
+                set { age = value; }
             }
 
             #endregion

@@ -12,8 +12,8 @@ namespace CodingStandards                                       //namespace shou
         public class ShoppingCart                              //class name should be in Pascal case
         {
             int totalCount = 0;                                //variables name should be in camelCase
-            private decimal _totalPrice;                       //private fields are prefixed with an underscore and use camelCase
-            private bool _isActive;                            //bool variables should have 'is' prefix
+            private decimal totalPrice;                       //private fields are prefixed with an underscore and use camelCase
+            private bool isActive;                            //bool variables should have 'is' prefix
 
             public void CalculateTotalPrice()                  //methods should be in PascalCase and use descriptive verbs to indicate their actions.
             {
@@ -32,7 +32,7 @@ namespace CodingStandards                                       //namespace shou
 
             public decimal GetTotalPrice()
             {
-                return _totalPrice;
+                return totalPrice;
             }
         }
     }

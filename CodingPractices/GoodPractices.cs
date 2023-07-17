@@ -12,8 +12,8 @@ namespace CodingStandards
             private const int MaxLinesOfCode = 25;                                            // use const instead of hardcoding nums
             private const string DefaultMessage = "Failed to update database.";               // keep var private and expose public methods
 
-            private string _name;                                                            //use only one var declaration per line
-            private int _age;
+            private string name;                                                            //use only one var declaration per line
+            private int age;
 
             public void SavePhoneNumber(string phoneNumber)                 //a method should do only one job
             {
@@ -32,7 +32,7 @@ namespace CodingStandards
 
             public bool SayHello(string name)                              //method name should tell what it does
             {
-                _name = name;
+                name = name;
                 Console.WriteLine("Hello, " + _name + "!");
 
                 if (IsRegisteredMember())
